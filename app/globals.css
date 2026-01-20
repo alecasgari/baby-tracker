@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(207, 232, 255, 0.35), transparent 45%),
+    radial-gradient(circle at 20% 20%, rgba(255, 215, 229, 0.25), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(207, 245, 231, 0.25), transparent 40%),
+    #f8fafc;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-vazir), system-ui, -apple-system, sans-serif;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, #eef2f7 30%, #f8fafc 45%, #eef2f7 60%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+  border-radius: 9999px;
+}
+
+.skeleton-card {
+  border-radius: 1rem;
+  background: linear-gradient(120deg, #eef2f7 30%, #f8fafc 45%, #eef2f7 60%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.skeleton-text {
+  height: 0.75rem;
+  border-radius: 9999px;
+  background: linear-gradient(120deg, #eef2f7 30%, #f8fafc 45%, #eef2f7 60%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.skeleton-title {
+  height: 1rem;
+  border-radius: 9999px;
+  background: linear-gradient(120deg, #eef2f7 30%, #f8fafc 45%, #eef2f7 60%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(226, 232, 240, 0.7) 25%,
+    rgba(248, 250, 252, 0.9) 50%,
+    rgba(226, 232, 240, 0.7) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
+.skeleton-text {
+  height: 12px;
+  border-radius: 999px;
+}
+
+.skeleton-title {
+  height: 20px;
+  border-radius: 999px;
+}
+
+.skeleton-card {
+  border-radius: 16px;
+}
+
+.skeleton-circle {
+  border-radius: 999px;
+}
+
