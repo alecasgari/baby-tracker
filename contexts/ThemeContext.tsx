@@ -29,8 +29,8 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   }, []);
 
   const toggle = useCallback(() => {
-    setMode((prev) => (prev === "light" ? "dark" : "light"));
-  }, [setMode]);
+    setModeState((prev) => (prev === "light" ? "dark" : "light"));
+  }, []);
 
   const value = useMemo(
     () => ({
